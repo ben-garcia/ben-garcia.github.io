@@ -28,13 +28,17 @@
         </ul>
       </nav>
       <div class="header__hero">
-        Front-End Development
+        <h1 class="header__hero__header">Front-End Development</h1>
+        <p class="header__hero__text">
+          Don't just use technology <br />
+          <span class="header__hero__create">Create it</span>
+        </p>
       </div>
     </header>
     <main>
       <section class="about">
-        Who Am I
-        <p>
+        <h2 class="about__header">Who Am I</h2>
+        <p class="about__text">
           Hello there, my name is Ben Garcia and I am aspiring Front-End Web
           Developer who is passionate about technology and the role it plays in
           our world. I have taken a few courses to get a fundamental
@@ -46,30 +50,47 @@
         </p>
       </section>
       <section class="work">
-        My Work
-        <article class="work__item">
-          <a target="_blank" href="https://odinwhereswaldo.herokuapp.com/">
-            <img
-              src="assets/wheres-waldo.jpg"
-              alt="screenshot of project landing page"
-            />
-          </a>
-        </article>
-        <article class="work__item">
-          <a target="_blank" href="https://ben-garcia.github.io/sketchpad/">
-            <img
-              src="assets/sketchpad.jpg"
-              alt="screenshoot of sketpad landing page"
-            />
-          </a>
-        </article>
+        <h2 class="work__header">My Work</h2>
+        <section class="work__projects">
+          <article class="work__projects__item">
+            <a target="_blank" href="https://odinwhereswaldo.herokuapp.com/">
+              <img
+                class="work__projects__item_pic"
+                src="assets/wheres-waldo.jpeg"
+                alt="screenshot of project landing page"
+              />
+            </a>
+            <p class="work__projects__item__description">
+              Where's Waldo game implemention using Ruby on Rails on the server
+              and jquery on the client. The server contains the position of the
+              characters you are looking for. When the user selects a character
+              among the crowd, the client sends an api call to the server to
+              check if the user has found a character. The server also holds the
+              high scores for each level. This project is hosted on Heroku.
+            </p>
+          </article>
+          <article class="work__projects__item">
+            <a target="_blank" href="https://ben-garcia.github.io/sketchpad/">
+              <img
+                class="work__projects__item_pic"
+                src="assets/sketchpad.jpeg"
+                alt="screenshoot of sketpad landing page"
+              />
+            </a>
+            <p class="work__projects__item__description">
+              Sketchpad game implememnted using jquery. When the user places the
+              mouse pointer over a box it changes color. The grid can be changed
+              up to a max of 64x64 grid. This project is hosted on Github Pages.
+            </p>
+          </article>
+        </section>
       </section>
       <section class="contact">
-        Get In Touch
+        <h2 class="contact__header">Get In Touch</h2>
       </section>
     </main>
-    <footer>
-      Copyright &copy 2019
+    <footer class="footer">
+      Copyright &copy 2019 Ben Garcia
     </footer>
   </body>
 </html>

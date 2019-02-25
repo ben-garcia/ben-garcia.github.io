@@ -16,21 +16,19 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
-.header__logo {
+.nav__logo {
   color: #fff;
-}
-
-.header__hero {
-  align-self: center;
 }
 
 .nav {
   display: flex;
   justify-content: space-evenly;
   width: 70vw;
+  height: 10vh;
+  padding-top: 1rem;
 }
 
 .nav__list {
@@ -42,4 +40,62 @@ body {
   padding-left: 1rem;
   display: inline-block;
   color: #fff;
+}
+
+.header__hero {
+  color: #fff;
+  padding-top: 12%;
+}
+
+.header__hero__header {
+  font-size: 2rem;
+}
+
+.header__hero__text {
+  font-size: 1.2rem;
+  width: inherit;
+}
+
+.header__hero__create {
+  font-size: 2rem;
+}
+
+.about__header {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.about__text {
+  font-size: 1.2rem;
+  padding: 0 9rem;
+  line-height: 120%;
+}
+
+.work__header,
+.contact__header {
+  text-align: center;
+}
+
+.work__projects {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.work__projects__item {
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.work__projects__item__description {
+  padding-left: 2rem;
+}
+
+.footer {
+  background-color: #2098d1;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
 }
