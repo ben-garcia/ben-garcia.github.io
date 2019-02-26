@@ -60,6 +60,11 @@ body {
   font-size: 2rem;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
 .about__header {
   text-align: center;
   padding-top: 1rem;
@@ -67,8 +72,9 @@ body {
 
 .about__text {
   font-size: 1.2rem;
-  padding: 0 9rem;
   line-height: 120%;
+  padding: 2rem;
+  flex-basis: auto;
 }
 
 .work__header,
@@ -80,18 +86,21 @@ body {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .work__projects__item {
-  margin: 1rem 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-basis: 30%;
+}
+
+.work__projects__item:hover .work__projects__item__description {
+  display: inline-block;
 }
 
 .work__projects__item__description {
-  padding-left: 2rem;
+  display: inline-block;
 }
 
 .footer {
@@ -99,10 +108,4 @@ body {
   color: #fff;
   text-align: center;
   padding: 0.5rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .about__text {
-    padding: 0 20px;
-  }
 }
