@@ -36,6 +36,12 @@ body {
   display: flex;
 }
 
+.nav__list__hamburger {
+  font-size: 50px;
+  color: #fff;
+  display: none;
+}
+
 .nav__list__item {
   padding-left: 1rem;
   display: inline-block;
@@ -89,7 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid #000;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .work__projects__item:hover .work__projects__item__description {
@@ -130,4 +136,20 @@ body {
   color: #fff;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__list__hamburger {
+    display: block;
+  }
 }
