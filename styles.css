@@ -37,9 +37,13 @@ body {
 }
 
 .nav__list__hamburger {
-  font-size: 50px;
+  font-size: 1.5rem;
   color: #fff;
   display: none;
+}
+
+.nav__list__hamburger:hover {
+  color: red;
 }
 
 .nav__list__item {
