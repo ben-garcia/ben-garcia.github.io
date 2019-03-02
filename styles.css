@@ -235,6 +235,11 @@ html {
     width: 90vw;
   }
 
+  .nav__logo {
+    align-self: center;
+    font-size: 25px;
+  }
+
   .nav__list {
     display: none;
   }
