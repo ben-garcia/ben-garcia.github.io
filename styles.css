@@ -54,7 +54,7 @@ html {
 }
 
 .nav__list__hamburger {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #fff;
   display: none;
 }
@@ -81,7 +81,7 @@ html {
 
 .header__hero {
   color: #fff;
-  padding-top: 12%;
+  padding-top: 25vh;
 }
 
 .header__hero__header {
@@ -232,6 +232,7 @@ html {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    width: 90vw;
   }
 
   .nav__list {
