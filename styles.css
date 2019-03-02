@@ -71,6 +71,10 @@ html {
   color: #fff;
 }
 
+.nav__list__item:hover {
+  text-decoration: underline;
+}
+
 .nav__list__checkbox {
   visibility: hidden;
 }
@@ -137,6 +141,7 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  justify-content: space-evenly;
   border: 1px solid #000;
   margin: 10px;
   /* overflow: hidden; */
@@ -147,6 +152,20 @@ html {
 
 .work__projects__item:hover .work__projects__item__hover {
   display: block;
+}
+
+.work__projects__item:hover .work__projects__item__description {
+  display: block;
+}
+
+.waldo {
+  background-image: url("assets/wheres-waldo.jpeg");
+  background-size: cover;
+}
+
+.sketchpad {
+  background-image: url("assets/sketchpad.jpeg");
+  background-size: cover;
 }
 
 .work__projects__item__pic {
@@ -178,6 +197,7 @@ html {
 
 .work__projects__item__description {
   text-align: center;
+  display: none;
 }
 
 .contact__icons {
