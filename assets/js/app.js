@@ -21,7 +21,7 @@
 
   // remove mobile nav after user has clicked on link.
   if (window.innerWidth <= 900) {
-    links.forEach(function(link) {
+    navLinks.forEach(function(link) {
       link.addEventListener("click", function() {
         const checkbox = document.getElementById("checkbox");
 
