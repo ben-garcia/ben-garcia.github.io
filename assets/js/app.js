@@ -4,10 +4,23 @@
 // navigation is removed and replaced with the hamburger icon.
 
 (function() {
-  if (window.innerWidth <= 900) {
-    const navLinks = document.querySelector(".nav__list");
-    const links = Array.from(navLinks.children);
+  const navLinks = document.querySelectorAll(".nav__list__item");
 
+  navLinks.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+      const target = link.getAttribute("data-destination");
+      const targetDestination = document.getElementById(target);
+      const scrollTop = targetDestination.getBoundingClientRect().top;
+
+      window.scrollBy({
+        top: scrollTop,
+        behavior: "smooth"
+      });
+    });
+  });
+
+  // remove mobile nav after user has clicked on link.
+  if (window.innerWidth <= 900) {
     links.forEach(function(link) {
       link.addEventListener("click", function() {
         const checkbox = document.getElementById("checkbox");

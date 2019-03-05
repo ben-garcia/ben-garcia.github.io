@@ -63,12 +63,14 @@ html {
   display: none;
   color: #fff;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .nav__list__item {
   padding-left: 1rem;
   display: inline-block;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav__list__item:hover {
@@ -178,7 +180,6 @@ html {
   align-items: center;
   display: none;
   align-self: center;
-  /* position: absolute; */
 }
 
 .work__projects__item__hover__btn {
@@ -249,6 +250,7 @@ html {
 
   .nav__list__hamburger {
     display: block;
+    cursor: pointer;
   }
 
   .nav__list__checkbox:checked ~ .nav__list {
