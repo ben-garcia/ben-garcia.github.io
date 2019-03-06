@@ -259,6 +259,7 @@ html {
   .nav__logo {
     align-self: center;
     font-size: 25px;
+    margin-top: 10px;
   }
 
   .nav__list {
