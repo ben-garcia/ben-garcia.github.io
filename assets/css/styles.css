@@ -261,14 +261,6 @@ html {
     font-size: 25px;
   }
 
-  .nav__logo__icon {
-    border-radius: 0;
-  }
-
-  .nav__logo__text {
-    display: none;
-  }
-
   .nav__list {
     display: none;
   }
