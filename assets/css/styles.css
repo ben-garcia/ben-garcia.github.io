@@ -261,6 +261,10 @@ html {
     font-size: 25px;
   }
 
+  .nav__logo__text {
+    display: none;
+  }
+
   .nav__list {
     display: none;
   }
