@@ -50,6 +50,8 @@ html {
   position: relative;
   top: -30px;
   font-weight: 700;
+  font-size: 0.5rem;
+  display: inline-block;
 }
 
 .nav {
