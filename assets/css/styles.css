@@ -84,14 +84,19 @@ html {
 }
 
 .nav__list__item {
-  padding-left: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.3rem;
   display: inline-block;
   color: #fff;
   cursor: pointer;
 }
 
 .nav__list__item:hover {
-  text-decoration: underline;
+  font-weight: 700;
+  border-radius: 10px;
+  color: #2098d1;
+  background-color: #fff;
+  border: 1px solid;
 }
 
 .nav__list__checkbox {
