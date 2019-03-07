@@ -50,8 +50,6 @@ html {
   position: relative;
   top: -30px;
   font-weight: 700;
-  font-size: 0.5rem;
-  display: inline-block;
 }
 
 .nav {
@@ -270,8 +268,12 @@ html {
     margin-top: 25px;
   }
 
+  .nav__logo__text {
+    display: none;
+  }
+
   .nav__list {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 100vw;
   }
