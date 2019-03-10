@@ -43,11 +43,15 @@ html {
 }
 
 .header::before {
+  -webkit-transform: skew(0, -30deg);
+  -ms-transform: skew(0, -30deg);
   transform: skew(0, -30deg);
   left: 50%;
 }
 
 .header::after {
+  -webkit-transform: skew(0, 30deg);
+  -ms-transform: skew(0, 30deg);
   transform: skew(0, 30deg);
   right: 50%;
 }
@@ -162,10 +166,11 @@ html {
 
 .about__text {
   font-size: 1.2rem;
-  line-height: 120%;
-  padding: 2rem;
+  line-height: 150%;
+  padding: 0.5rem 2rem 0 2rem;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  word-spacing: 0.1rem;
 }
 
 .work__projects {
@@ -177,6 +182,7 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-top: 0.5rem;
 }
 
 .work__projects__item {
@@ -187,6 +193,8 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   border: 1px solid #000;
   margin: 10px;
@@ -223,10 +231,17 @@ html {
 }
 
 .work__projects__item__hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: none;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -255,6 +270,7 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding-top: 0.5rem;
 }
 
 .contact__icons__item {
@@ -288,6 +304,8 @@ html {
   }
 
   .nav__logo {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     font-size: 25px;
     margin-top: 25px;
@@ -329,6 +347,8 @@ html {
     align-items: center;
     font-size: 2rem;
     line-height: 2.2;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
   }
 
