@@ -31,6 +31,27 @@ html {
   height: 90vh;
 }
 
+.header::before,
+.header::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 10vh;
+  background-color: #2098d1;
+  position: absolute;
+  bottom: 5rem;
+}
+
+.header::before {
+  transform: skew(0, -30deg);
+  left: 50%;
+}
+
+.header::after {
+  transform: skew(0, 30deg);
+  right: 50%;
+}
+
 .nav__logo {
   color: #fff;
 }
@@ -136,7 +157,7 @@ html {
 .work__header,
 .contact__header {
   text-align: center;
-  margin: 1rem 0;
+  margin: 2.5rem 0 0 0;
 }
 
 .about__text {
