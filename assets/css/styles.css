@@ -173,6 +173,11 @@ html {
   word-spacing: 0.1rem;
 }
 
+.about__text__link {
+  text-decoration: none;
+  color: #2098d1;
+}
+
 .work__projects {
   display: -webkit-box;
   display: -ms-flexbox;
