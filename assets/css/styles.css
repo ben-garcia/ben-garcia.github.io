@@ -205,6 +205,8 @@ html {
   margin: 10px;
   width: 450px;
   height: 350px;
+  background-position: center;
+  background-size: cover;
 }
 
 .work__projects__item:hover .work__projects__item__hover {
@@ -217,17 +219,14 @@ html {
 
 .odinfacebook {
   background-image: url("../images/odinfacebook.jpeg");
-  background-size: cover;
 }
 
 .waldo {
   background-image: url("../images/wheres-waldo.jpeg");
-  background-size: cover;
 }
 
 .sketchpad {
   background-image: url("../images/sketchpad.jpeg");
-  background-size: cover;
 }
 
 .work__projects__item__pic {
