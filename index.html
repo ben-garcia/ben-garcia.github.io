@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="assets/images/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Source+Code+Pro:400,700"
       rel="stylesheet"
@@ -23,111 +23,121 @@
     <title>Ben Garcia's Portfolio</s></title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <div class="nav__logo">
-          <img class="nav__logo__icon" src="assets/images/logo.png" alt="website logo">
-          <span class="nav__logo__text">Ben Garcia</span>
-        </div>
-        <input class="nav__list__checkbox" type="checkbox" id="checkbox" />
+    <header class="header" role="header">
+      <nav class="nav" role="navigation">
+        <a class="nav__logo" href="/">
+          <img
+            class="nav__icon"
+            src="assets/images/logo.png"
+            alt="website logo"
+          />
+          <span class="nav__text">Ben Garcia</span>
+        </a>
         <ul class="nav__list">
-          <li class="nav__list__item" data-destination="about">About</a></li>
-          <li class="nav__list__item" data-destination="work">Work</a></li>
-          <li class="nav__list__item" data-destination="contact">Contact</a>
-          </li>
+          <li class="nav__item" data-destination="about">About</li>
+          <li class="nav__item" data-destination="work">Work</li>
+          <li class="nav__item" data-destination="contact">Contact</li>
         </ul>
-        <label class="nav__list__close" for="checkbox">
-          <i class="fas fa-times"></i>
-        </label>
-        <label class="nav__list__hamburger" for="checkbox">
+        <button
+          class="button button--open"
+          role="button"
+          aria-label="Show Menu"
+        >
           <i class="fas fa-bars"></i>
-        </label>
+        </button>
       </nav>
-      <div class="header__hero">
-        <h1 class="header__hero__header">Web Development</h1>
-        <p class="header__hero__text">
+      <div class="header__text">
+        <h1 class="header__title">Web Development</h1>
+        <p class="header__description">
           Don't just use technology <br />
-          <span class="header__hero__create">Create it</span>
+          <span class="focus">Create it</span>
         </p>
       </div>
     </header>
-    <main>
-      <section id="about" class="about">
-        <h2 class="about__header">Who Am I</h2>
-        <p class="about__text">
-          My name is Ben Garcia, and I am an aspiring Web Developer who is passionate about technology and the role it plays in our world. The Web, in particular, has intrigued me ever since I started reading
-          <a target="_blank"
-          class="about__text__link"
-          href="https://www.theodinproject.com/"
+    <main role="main">
+      <section id="about" class="about" aria-labelledby="about__text">
+        <h2 class="about__title">Who Am I</h2>
+        <p class="about__text" id="about__text">
+          My name is Ben Garcia, and I am an aspiring Web Developer who is
+          passionate about technology and the role it plays in our world. The
+          Web, in particular, has intrigued me ever since I started reading
+          <a
+            target="_blank"
+            class="about__link"
+            href="https://www.theodinproject.com/"
           >
             The Odin Project
           </a>
-          ’s Web development curriculum. Whether it was front-end or back-end I found myself hooked and decided then and there that this was what I wanted to do.
+          ’s Web development curriculum. Whether it was front-end or back-end I
+          found myself hooked and decided then and there that this was what I
+          wanted to do.
         </p>
       </section>
-      <section id="work" class="work">
-        <h2 class="work__header">My Work</h2>
-        <section class="work__projects">
-          <article class="work__projects__item odinfacebook">
-            <div class="work__projects__item__hover">
+      <section id="work" class="work" aria-labelledby="work__title">
+        <h2 class="work__title" id="work__title">My Work</h2>
+        <section class="projects">
+          <article class="project odinfacebook">
+            <div class="project__links">
               <a
-                class="work__projects__item__hover__btn"
+                class="project__button"
                 target="_blank"
                 href="https://odinbookface.herokuapp.com/"
-                >View Site</a
               >
+                View Site
+              </a>
               <a
-                class="work__projects__item__hover__btn"
+                class="project__button"
                 target="_blank"
                 href="https://github.com/ben-garcia/odin_facebook"
-                >View Code</a
               >
+                View Code
+              </a>
             </div>
-            <h3 class="work__projects__item__description">
+            <h3 class="project__description">
               HTML, CSS, JS/JQuery, Rails
             </h3>
           </article>
-          <article class="work__projects__item waldo">
-            <div class="work__projects__item__hover">
+          <article class="project waldo">
+            <div class="project__links">
               <a
-                class="work__projects__item__hover__btn"
+                class="project__button"
                 target="_blank"
                 href="https://odinwhereswaldo.herokuapp.com/"
                 >View Site</a
               >
               <a
-                class="work__projects__item__hover__btn"
+                class="project__button"
                 target="_blank"
                 href="https://github.com/ben-garcia/odin_wheres_waldo/"
                 >View Code</a
               >
             </div>
-            <h3 class="work__projects__item__description">
+            <h3 class="project__description">
               HTML, CSS, JS/JQuery, Rails
             </h3>
           </article>
-          </section>
+        </section>
       </section>
-      <section id="contact" class="contact">
-        <h2 class="contact__header">Get In Touch</h2>
-        <div class="contact__icons">
+      <section id="contact" class="contact" aria-labelledby="contact__title">
+        <h2 class="contact__title" id="contact__title">Get In Touch</h2>
+        <div class="icons">
           <a
             target="_blank"
-            class="contact__icons__item"
+            class="icons__item"
             href="mailto:7rubengarcia7@gmail.com"
           >
             <i class="far fa-envelope"></i>
           </a>
           <a
             target="_blank"
-            class="contact__icons__item"
+            class="icons__item"
             href="http://www.linkedin.com/in/ben-garcia-b12879162"
           >
             <i class="fab fa-linkedin"></i>
           </a>
           <a
             target="_blank"
-            class="contact__icons__item"
+            class="icons__item"
             href="http://github.com/ben-garcia/"
           >
             <i class="fab fa-github"></i>

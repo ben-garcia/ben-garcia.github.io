@@ -12,6 +12,7 @@ html {
   background-color: #fff;
   overflow-x: hidden;
 }
+/* HEADER SECTION */
 
 .header {
   background-color: #2098d1;
@@ -56,11 +57,12 @@ html {
   right: 50%;
 }
 
+/* NAVIGATION SECTION */
 .nav__logo {
   color: #fff;
 }
 
-.nav__logo__icon {
+.nav__icon {
   background-image: url('../images/logo.png');
   background-size: cover;
   width: 50px;
@@ -71,7 +73,7 @@ html {
   top: -10px;
 }
 
-.nav__logo__text {
+.nav__text {
   position: relative;
   top: -30px;
   font-weight: 700;
@@ -96,20 +98,24 @@ html {
   display: flex;
 }
 
-.nav__list__hamburger {
-  font-size: 2rem;
+.button {
   color: #fff;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+}
+
+.button--open {
+  font-size: 2rem;
   display: none;
 }
 
-.nav__list__close {
-  display: none;
-  color: #fff;
-  font-size: 2rem;
+.button--close {
   cursor: pointer;
+  font-size: 2.5rem;
 }
 
-.nav__list__item {
+.nav__item {
   padding-left: 1.2rem;
   padding-right: 1.3rem;
   display: inline-block;
@@ -117,7 +123,7 @@ html {
   cursor: pointer;
 }
 
-.nav__list__item:hover {
+.nav__item:hover {
   font-weight: 700;
   border-radius: 10px;
   color: #2098d1;
@@ -125,27 +131,24 @@ html {
   border: 1px solid;
 }
 
-.nav__list__checkbox {
-  visibility: hidden;
-}
-
-.header__hero {
+.header__text {
   color: #fff;
   padding-top: 25vh;
 }
 
-.header__hero__header {
+.header__title {
   font-size: 2rem;
 }
 
-.header__hero__text {
+.header__description {
   font-size: 1.2rem;
   width: inherit;
 }
 
-.header__hero__create {
+.focus {
   font-size: 2rem;
 }
+/* ABOUT SECTION */
 
 .about {
   display: -webkit-box;
@@ -157,9 +160,9 @@ html {
   flex-direction: column;
 }
 
-.about__header,
-.work__header,
-.contact__header {
+.about__title,
+.work__title,
+.contact__title {
   text-align: center;
   margin: 2.5rem 0 0 0;
 }
@@ -173,12 +176,14 @@ html {
   word-spacing: 0.1rem;
 }
 
-.about__text__link {
+.about__link {
   text-decoration: none;
   color: #2098d1;
 }
 
-.work__projects {
+/* WORK SECTION */
+
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +195,7 @@ html {
   padding-top: 0.5rem;
 }
 
-.work__projects__item {
+.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,11 +214,11 @@ html {
   background-size: cover;
 }
 
-.work__projects__item:hover .work__projects__item__hover {
+.project:hover .project__links {
   display: block;
 }
 
-.work__projects__item:hover .work__projects__item__description {
+.project:hover .project__description {
   display: block;
 }
 
@@ -225,12 +230,7 @@ html {
   background-image: url('../images/wheres-waldo.jpeg');
 }
 
-.work__projects__item__pic {
-  width: 100%;
-  height: 100%;
-}
-
-.work__projects__item__hover {
+.project__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +245,7 @@ html {
   align-self: center;
 }
 
-.work__projects__item__hover__btn {
+.project__button {
   display: inline-block;
   background-color: #2098d1;
   color: #fff;
@@ -253,17 +253,19 @@ html {
   border-radius: 10px;
 }
 
-.work__projects__item__hover__btn:hover {
+.project__button:hover {
   color: #2098d1;
   background-color: #fff;
 }
 
-.work__projects__item__description {
+.project__description {
   text-align: center;
   display: none;
 }
 
-.contact__icons {
+/* CONTACT SECTION */
+
+.icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,20 +275,22 @@ html {
   padding-top: 0.5rem;
 }
 
-.contact__icons__item {
+.icons__item {
   font-size: 4rem;
   margin-right: 2rem;
 }
 
-.contact__icons__item:link,
-.contact__icons__item:visited {
+.icons__item:link,
+.icons__item:visited {
   color: inherit;
   text-decoration: none;
 }
 
-.contact__icons__item:hover {
+.icons__item:hover {
   color: #2098d1;
 }
+
+/* FOOTER SECTION */
 
 .footer {
   background-color: #2098d1;
@@ -311,7 +315,7 @@ html {
     margin-top: 25px;
   }
 
-  .nav__logo__text {
+  .nav__text {
     display: none;
   }
 
@@ -321,12 +325,12 @@ html {
     left: 100vw;
   }
 
-  .nav__list__hamburger {
+  .button--open {
     display: block;
     cursor: pointer;
   }
 
-  .nav__list__checkbox:checked ~ .nav__list {
+  .nav__list--mobile {
     position: absolute;
     left: 0;
     background-color: #2098d1;
@@ -350,14 +354,5 @@ html {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-  }
-
-  .nav__list__checkbox:checked ~ .nav__list__close {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 2.5rem;
-    padding: 10px;
   }
 }
