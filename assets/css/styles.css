@@ -324,6 +324,7 @@ body {
   .nav__list {
     display: none;
     position: absolute;
+    top: 0;
     transform: translateX(100vw);
   }
 
