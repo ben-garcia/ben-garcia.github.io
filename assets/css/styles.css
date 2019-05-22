@@ -224,6 +224,10 @@ body {
   display: block;
 }
 
+.orgello {
+  background-image: url('../images/orgello.jpg');
+}
+
 .odinfacebook {
   background-image: url('../images/odinfacebook.jpeg');
 }
