@@ -177,11 +177,7 @@ body {
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   word-spacing: 0.1rem;
-}
-
-.about__link {
-  text-decoration: none;
-  color: #2098d1;
+  text-align: center;
 }
 
 /* WORK SECTION */
