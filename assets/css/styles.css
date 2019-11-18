@@ -70,12 +70,6 @@ body {
   top: -14px;
 }
 
-/* .nav__text {
-  position: relative;
-  top: -30px;
-  font-weight: 700;
-} */
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
