@@ -200,6 +200,7 @@ body {
 }
 
 .project__gif {
+  width: 50%;
   height: 100%;
 }
 
