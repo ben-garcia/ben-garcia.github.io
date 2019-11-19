@@ -7,11 +7,16 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #fff;
   overflow-x: hidden;
   color: #000;
 }
+
 /* HEADER SECTION */
 
 .header {
@@ -153,8 +158,13 @@ body {
 }
 
 .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
   margin: 20px 0;
@@ -169,12 +179,21 @@ body {
 
 .project__gif {
   width: 550px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   width: 450px;
 }
@@ -191,6 +210,8 @@ body {
 .feature-list {
   display: inline-block;
   width: 100%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   margin: 10px 0;
 }
@@ -200,6 +221,8 @@ body {
 }
 
 .project__links {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   margin: 20px 0 0 0;
 }
@@ -266,13 +289,15 @@ body {
     -ms-grid-row-align: center;
     align-self: center;
     font-size: 25px;
-    margin-top: 25px;
+    margin-top: 2.2rem;
   }
 
   .nav__list {
     display: none;
     position: absolute;
     top: 0;
+    -webkit-transform: translateX(100vw);
+    -ms-transform: translateX(100vw);
     transform: translateX(100vw);
   }
 
@@ -283,11 +308,12 @@ body {
   .button--open {
     display: block;
     cursor: pointer;
-    padding: 10px 0 0 0;
   }
 
   .nav__list--mobile {
     display: block;
+    -webkit-transform: translateX(-5vw);
+    -ms-transform: translateX(-5vw);
     transform: translateX(-5vw);
     background-color: #2098d1;
     width: 100vw;
@@ -309,7 +335,11 @@ body {
     line-height: 2.2;
     -webkit-transition: transform 0.4s;
     -o-transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }
 }
 
