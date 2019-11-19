@@ -32,31 +32,6 @@ body {
   height: 90vh;
 }
 
-.header::before,
-.header::after {
-  content: "";
-  display: block;
-  width: 4rem;
-  height: 5vh;
-  background-color: #2098d1;
-  position: absolute;
-  bottom: 4rem;
-}
-
-.header::before {
-  -webkit-transform: skew(0, -30deg);
-  -ms-transform: skew(0, -30deg);
-  transform: skew(0, -30deg);
-  left: 50%;
-}
-
-.header::after {
-  -webkit-transform: skew(0, 30deg);
-  -ms-transform: skew(0, 30deg);
-  transform: skew(0, 30deg);
-  right: 50%;
-}
-
 /* NAVIGATION SECTION */
 .nav__logo {
   color: #fff;
@@ -335,5 +310,12 @@ body {
     -webkit-transition: transform 0.4s;
     -o-transition: transform 0.4s;
     transition: transform 0.4s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .project__gif,
+  .project__information {
+    width: 100%;
   }
 }
