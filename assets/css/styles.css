@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-faprojectsv: "Lato", sans-serif;
   text-decoration: none;
 }
 
@@ -54,9 +54,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
   width: 70vw;
   height: 10vh;
   padding-top: 1rem;
@@ -99,10 +99,7 @@ body {
 }
 
 .nav__item:hover {
-  font-weight: 700;
-  border-radius: 10px;
-  color: #2098d1;
-  background-color: #fff;
+  text-decoration: underline;
 }
 
 .header__text {

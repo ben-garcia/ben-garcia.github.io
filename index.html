@@ -34,7 +34,7 @@
         </a>
         <ul class="nav__list">
           <li class="nav__item" data-destination="about">About</li>
-          <li class="nav__item" data-destination="work">Work</li>
+          <li class="nav__item" data-destination="work">Projects</li>
           <li class="nav__item" data-destination="contact">Contact</li>
         </ul>
         <button
@@ -62,8 +62,59 @@
         </p>
       </section>
       <section id="work" class="work" aria-labelledby="work__title">
-        <h2 class="work__title" id="work__title">My Work</h2>
+        <h2 class="work__title" id="work__title">My Projects</h2>
         <section class="projects">
+          <article class="project">
+            <img src="assets/images/stack-demo.gif" class="project__gif" />
+            <div class="project__information">
+              <h3 class="project__title">Stack</h3>
+              <p class="project__description">
+                Stack is a miniature clone of Slack. It was built using
+                React/Redux and Node/Express
+              </p>
+              <ul class="feature-list">
+                <li class="feature-list__item">
+                  Create workspaces, channels
+                </li>
+                <li class="feature-list__item">Drag and Drop functionality.</li>
+                <li class="feature-list__item">
+                  Add teammates to your workspaces
+                </li>
+                <li class="feature-list__item">
+                  Add members to your channels
+                </li>
+                <li class="feature-list__item">
+                  Real time messaging using SocketIO
+                </li>
+                <li class="feature-list__item">
+                  Authentication and Authrization using sesion
+                </li>
+                <li class="feature-list__item">
+                  Caching using Redis
+                </li>
+                <li class="feature-list__item">
+                  Data saved to a PostgreSQL database via Express api
+                </li>
+                <li class="feature-list__item">
+                  Deployed to Heroku(server) adn Netlify(client)
+                </li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://stackapplication.netlify.app"
+                  target="_blank"
+                  class="link"
+                  >Visit Site</a
+                >
+                <a
+                  href="https://github.com/ben-garcia/stack-client"
+                  target="_blank"
+                  class="link"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </article>
           <article class="project">
             <img src="assets/images/orgello-demo.gif" class="project__gif" />
             <div class="project__information">
@@ -84,7 +135,10 @@
                   Implemented authentication and authorization using JWT.
                 </li>
                 <li class="feature-list__item">
-                  Data saved to a PostgreSQL database.
+                  Data saved to a PostgreSQL database via Express api
+                </li>
+                <li class="feature-list__item">
+                  Deployed to Heroku(server) adn Netlify(client)
                 </li>
               </ul>
               <div class="project__links">
@@ -96,85 +150,6 @@
                 >
                 <a
                   href="https://github.com/ben-garcia/orgello"
-                  target="_blank"
-                  class="link"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="project">
-            <img
-              src="assets/images/odin-facebook-demo.gif"
-              class="project__gif"
-            />
-            <div class="project__information">
-              <h3 class="project__title">Odin Facebook</h3>
-              <p class="project__description">
-                A minuature social app using Ruby on Rails.
-              </p>
-              <ul class="feature-list">
-                <li class="feature-list__item">User Authentication.</li>
-                <li class="feature-list__item">
-                  Users can send friend requests and become friends.
-                </li>
-                <li class="feature-list__item">
-                  Users can create posts.(text only)
-                </li>
-                <li class="feature-list__item">
-                  Users can leave comments on those posts created by their
-                  friends.
-                </li>
-                <li class="feature-list__item">
-                  Social Auth with Facebook.
-                </li>
-              </ul>
-              <div class="project__links">
-                <a
-                  href="https://odinbookface.herokuapp.com/"
-                  target="_blank"
-                  class="link"
-                  >Visit Site</a
-                >
-                <a
-                  href="https://github.com/ben-garcia/odin_facebook"
-                  target="_blank"
-                  class="link"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </article>
-          <article class="project">
-            <img
-              src="assets/images/odin-wheres-waldo-demo.gif"
-              class="project__gif"
-            />
-            <div class="project__information">
-              <h3 class="project__title">Odin Where's Waldo</h3>
-              <p class="project__description">
-                A where's waldo game built with Ruby on Rails.
-              </p>
-              <ul class="feature-list">
-                <li class="feature-list__item">
-                  Easy, Medium, Hard difficulties.
-                </li>
-                <li class="feature-list__item">
-                  API call to verify if the user has found a character.
-                </li>
-                <li class="feature-list__item">
-                  View your high scores for each map.
-                </li>
-              </ul>
-              <div class="project__links">
-                <a
-                  href="https://odinwhereswaldo.herokuapp.com/"
-                  target="_blank"
-                  class="link"
-                  >Visit Site</a
-                >
-                <a
-                  href="https://github.com/ben-garcia/odin_wheres_waldo"
                   target="_blank"
                   class="link"
                   >View Code</a
@@ -212,7 +187,7 @@
       </section>
     </main>
     <footer class="footer">
-      Ben Garcia 2019
+      Ben Garcia 2020
     </footer>
   </body>
   <script src="assets/js/app.js"></script>
