@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-faprojectsv: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
 }
 
@@ -169,7 +169,7 @@ body {
 
 .project::after {
   content: "";
-  width: 75%;
+  width: 85%;
   border: 1px solid #e0d7d7;
   margin: 20px 0 0 0;
 }
